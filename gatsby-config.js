@@ -20,5 +20,6 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-fontawesome-css`,
   ],
 }
