@@ -1,7 +1,7 @@
 {
-  "name": "site-perso",
+  "name": "bf-portfolio",
   "private": true,
-  "description": "Mon site perso",
+  "description": "Mon portfolio photo",
   "version": "0.1.0",
   "author": "Benjamin Fiorini <benjamin.fiorini@gmail.com>",
   "dependencies": {
@@ -43,5 +43,5 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": "https://github.com/bfiorini/site-perso"
+  "repository": "https://github.com/bfiorini/portfolio"
 }

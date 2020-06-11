@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx, Flex, Box, Styled } from "theme-ui"
+import { Box, Flex, jsx, Styled } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Gallery = ({ title, images }) => {
