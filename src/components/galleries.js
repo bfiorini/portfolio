@@ -55,10 +55,10 @@ const Galleries = () => {
           node {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 1500) {
                 ...GatsbyImageSharpFluid
               }
-              fixed(height: 350) {
+              fixed(height: 310) {
                 ...GatsbyImageSharpFixed
               }
             }
