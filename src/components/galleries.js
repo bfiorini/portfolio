@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 const Gallery = ({ title, images }) => {
   return (
     <>
-      <Styled.h3>{title}</Styled.h3>
+      <Styled.h4>{title}</Styled.h4>
       <Flex sx={{ flexFlow: [`column nowrap`, `row wrap`] }}>
         {images.map((img, i) => (
           <div key={i}>
