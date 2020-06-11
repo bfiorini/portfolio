@@ -35,7 +35,7 @@ SocialListItem.propTypes = {
 }
 
 const Footer = () => (
-  <footer>
+  <footer sx={{ marginTop: 5 }}>
     <ul sx={{ margin: 0, padding: 0 }}>
       <SocialListItem
         link="https://www.instagram.com/cabrisexplorateurs/"
