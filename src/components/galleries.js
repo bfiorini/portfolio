@@ -35,7 +35,7 @@ Gallery.propTypes = {
 const Galleries = () => {
   const data = useStaticQuery(graphql`
     query {
-      montagnes: allFile(filter: { relativePath: { regex: "/Montagnes/" } }) {
+      montagnes: allFile(filter: { relativePath: { regex: "/montagnes/" } }) {
         edges {
           node {
             publicURL
@@ -50,7 +50,7 @@ const Galleries = () => {
           }
         }
       }
-      jardin: allFile(filter: { relativePath: { regex: "/Jardin/" } }) {
+      jardin: allFile(filter: { relativePath: { regex: "/jardin/" } }) {
         edges {
           node {
             publicURL
@@ -70,8 +70,8 @@ const Galleries = () => {
 
   return (
     <>
-      <Gallery title="Montagnes" images={data.montagnes.edges} />
-      <Gallery title="Jardin" images={data.jardin.edges} />
+      <Gallery title="montagnes" images={data.montagnes.edges} />
+      <Gallery title="jardin" images={data.jardin.edges} />
     </>
   )
 }

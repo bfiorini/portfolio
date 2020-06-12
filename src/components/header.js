@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, Flex, jsx, Styled, Link as TLink } from "theme-ui"
+import { Flex, jsx, Link as TLink, Styled } from "theme-ui"
 import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby"
@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
         to="/contact"
         sx={{ fontSize: 3, py: 2, variant: "styles.navlink" }}
       >
-        CONTACT
+        contact
       </TLink>
     </Flex>
   </header>

@@ -27,7 +27,17 @@ const ContactPage = () => (
       <Label htmlFor="message">Message</Label>
       <Textarea name="message" id="message" rows="5" required />
       <br />
-      <Button type="submit">Envoyer</Button>
+      <Button
+        type="submit"
+        sx={{
+          cursor: "pointer",
+          "&:hover": {
+            backgroundColor: "secondary",
+          },
+        }}
+      >
+        Envoyer
+      </Button>
     </Box>
   </Layout>
 )
