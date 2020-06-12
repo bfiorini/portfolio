@@ -22,4 +22,12 @@ export default {
       },
     },
   },
+  buttons: {
+    primary: {
+      cursor: "pointer",
+      "&:hover": {
+        backgroundColor: "secondary",
+      },
+    },
+  },
 }

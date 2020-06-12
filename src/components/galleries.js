@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, Flex, jsx, Styled } from "theme-ui"
+import { Box, Flex, jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
@@ -8,16 +8,16 @@ import Img from "gatsby-image"
 const Gallery = ({ title, images }) => {
   return (
     <>
-      <Styled.h4>{title}</Styled.h4>
+      <h4>{title}</h4>
       <Flex sx={{ flexFlow: [`column nowrap`, `row wrap`] }}>
         {images.map((img, i) => (
           <div key={i}>
-            <Box sx={{ display: [`none`, `block`], marginRight: 2 }}>
+            <Box sx={{ display: [`none`, `block`], mr: 2 }}>
               <a href={img.node.childImageSharp.fluid.src}>
                 <Img fixed={img.node.childImageSharp.fixed} />
               </a>
             </Box>
-            <Box sx={{ display: [`block`, `none`], marginBottom: 1 }}>
+            <Box sx={{ display: [`block`, `none`], mb: 1 }}>
               <Img fluid={img.node.childImageSharp.fluid} />
             </Box>
           </div>

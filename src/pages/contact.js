@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, Button, jsx, Label, Input, Textarea } from "theme-ui"
+import { Box, Button, Field, jsx, Label, Textarea } from "theme-ui"
 import React from "react"
 
 import Layout from "../components/layout"
@@ -18,26 +18,13 @@ const ContactPage = () => (
       sx={{ maxWidth: ["640px"] }}
     >
       <input type="hidden" name="bot-field" />
-      <Label htmlFor="name">Nom</Label>
-      <Input type="text" name="name" id="name" required />
-      <Label htmlFor="email">Email</Label>
-      <Input type="email" name="email" id="email" required />
-      <Label htmlFor="subject">Sujet</Label>
-      <Input type="text" name="subject" id="subject" required />
+      <Field label="Nom" name="name" id="name" type="text" required />
+      <Field label="Email" name="email" id="email" type="email" required />
+      <Field label="Sujet" name="subject" id="subject" type="text" required />
       <Label htmlFor="message">Message</Label>
-      <Textarea name="message" id="message" rows="5" required />
+      <Textarea name="message" id="message" rows={5} required />
       <br />
-      <Button
-        type="submit"
-        sx={{
-          cursor: "pointer",
-          "&:hover": {
-            backgroundColor: "secondary",
-          },
-        }}
-      >
-        Envoyer
-      </Button>
+      <Button type="submit">Envoyer</Button>
     </Box>
   </Layout>
 )

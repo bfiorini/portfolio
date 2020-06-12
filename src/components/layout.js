@@ -8,15 +8,7 @@ import Header from "./header"
 import Footer from "./footer"
 
 const Canva = ({ children }) => {
-  return (
-    <div
-      sx={{
-        margin: [3, 5],
-      }}
-    >
-      {children}
-    </div>
-  )
+  return <div sx={{ margin: [3, 5] }}>{children}</div>
 }
 
 Canva.propTypes = {

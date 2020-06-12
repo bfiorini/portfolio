@@ -7,12 +7,7 @@ import PropTypes from "prop-types"
 
 const SocialListItem = ({ link, icon }) => {
   return (
-    <li
-      sx={{
-        display: "inline",
-        marginRight: 2,
-      }}
-    >
+    <li sx={{ display: "inline", mr: 2 }}>
       <Link href={link}>
         <FontAwesomeIcon
           icon={icon}
@@ -35,8 +30,8 @@ SocialListItem.propTypes = {
 }
 
 const Footer = () => (
-  <footer sx={{ marginTop: 5 }}>
-    <ul sx={{ margin: 0, padding: 0 }}>
+  <footer sx={{ mt: 5 }}>
+    <ul sx={{ m: 0, p: 0 }}>
       <SocialListItem
         link="https://www.instagram.com/cabrisexplorateurs/"
         icon={faInstagram}
