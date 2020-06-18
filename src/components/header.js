@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header sx={{ variant: "styles.header", mb: 2 }}>
     <Flex as="nav" sx={{ alignItems: "baseline" }}>
-      <TLink as={Link} to="/" sx={{ fontSize: 5, mr: 4 }}>
+      <TLink as={Link} to="/" sx={{ mr: 4 }}>
         <h1>{siteTitle}</h1>
       </TLink>
       <TLink as={Link} to="/contact">

@@ -20,6 +20,13 @@ export default {
           color: "secondary",
         },
       },
+      h1: {
+        my: 0,
+        fontSize: 5
+      },
+      h2: {
+        my: 0
+      }
     },
   },
   buttons: {
