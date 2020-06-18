@@ -14,6 +14,7 @@ export default {
     ...roboto.styles,
     header: {
       a: {
+        mr: [4, 5],
         color: "primary",
         textDecoration: "none",
         "&:hover": {
@@ -22,11 +23,12 @@ export default {
       },
       h1: {
         my: 0,
-        fontSize: 5
+        fontSize: [4, 5],
       },
       h2: {
-        my: 0
-      }
+        my: 0,
+        fontSize: [2, 4],
+      },
     },
   },
   buttons: {
